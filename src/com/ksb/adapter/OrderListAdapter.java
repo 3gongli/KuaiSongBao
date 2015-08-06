@@ -44,6 +44,7 @@ public class OrderListAdapter extends BaseAdapter {
 	SharePrefUtil sharePrefUtil = new SharePrefUtil();
 	String id = "";
 
+	// ---
 	public OrderListAdapter(List<OrderList> myList, Context mContext, int status) {
 
 		super();
