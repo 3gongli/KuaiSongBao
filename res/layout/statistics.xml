@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/titlestatistic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout 
+            android:id="@+id/linearLayout_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <EditText 
+                android:id="@+id/editText_starttime"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="选择开始时间"/>
+            <TextView 
+                android:id="@+id/textView"
+                android:layout_width="50dp"
+                android:layout_height="2dp"
+                android:background="@drawable/green_line"
+                android:layout_marginTop="5dp"/>
+            <EditText 
+                android:id="@+id/editText_endtime"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="false"
+                android:layout_height="wrap_content"
+                android:hint="选择结束时间"/>
+        </LinearLayout>
+        <RelativeLayout 
+            android:id="@+id/relativeLayout_ok"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp">
+            <Button 
+                android:id="@+id/button_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:background="@color/blue"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                />
+        </RelativeLayout>
+        <View 
+	    android:layout_width="match_parent"
+	    android:layout_height="2dp"
+	    android:background="#BEBEBE"
+	    android:layout_marginTop="5dp"/>
+        
+        <LinearLayout
+            android:id="@+id/linearLayout_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <TextView 
+                android:id="@+id/textView_date"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content"
+                android:text="日期"/>
+
+            <TextView
+                android:id="@+id/textView_complete"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content"
+                android:text="已完成"/>
+            <TextView
+                android:id="@+id/textView_cancle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content"
+                android:text="取消"/>
+        </LinearLayout>
+        
+       <LinearLayout 
+            android:id="@+id/linearLayout_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+        		android:id="@+id/pull_refresh_list"
+        		android:layout_width="fill_parent"
+        		android:layout_height="fill_parent"
+        		android:cacheColorHint="#00000000"
+        		android:divider="#19000000"
+        		android:dividerHeight="0dp"
+        		android:fadingEdge="none"
+        		android:fastScrollEnabled="false"
+        		android:footerDividersEnabled="false"
+        		android:headerDividersEnabled="false"
+        		android:smoothScrollbar="true" />
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

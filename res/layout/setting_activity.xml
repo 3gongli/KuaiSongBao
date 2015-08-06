@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/layout_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+
+        <EditText
+            android:id="@+id/sp_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="商家名称" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/sp_name"
+            android:layout_alignRight="@id/sp_name"
+            android:layout_marginBottom="2dp"
+            android:clickable="true"
+            android:src="@drawable/shangjia" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+
+        <EditText
+            android:id="@+id/select_province"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="请选择省份" />
+
+        <ImageView
+            android:id="@+id/iv_down_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/select_province"
+            android:layout_alignRight="@id/select_province"
+            android:layout_marginBottom="2dp"
+            android:clickable="true"
+            android:src="@drawable/sanjiao" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+
+        <EditText
+            android:id="@+id/select_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:hint="请选择市/区" />
+
+        <ImageView
+            android:id="@+id/iv_shiqu_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/select_city"
+            android:layout_alignRight="@id/select_city"
+            android:layout_marginBottom="2dp"
+            android:clickable="true"
+            android:src="@drawable/sanjiao" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+
+        <EditText
+            android:id="@+id/select_street"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="街/小区/楼/大厦" />
+
+        <ImageView
+            android:id="@+id/iv__street"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/select_street"
+            android:layout_alignRight="@+id/select_street"
+            android:layout_marginBottom="2dp"
+            android:clickable="true"
+        
+            android:src="@drawable/dizhi" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+
+        <EditText
+            android:id="@+id/write_door_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="请详细到门牌号" />
+
+        <ImageView
+            android:id="@+id/iv_door_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_alignRight="@+id/write_door_num"
+            android:layout_alignTop="@+id/write_door_num"
+            android:clickable="true"
+            android:src="@drawable/xingxixinxi" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_determine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="80px"
+        android:background="#008EE6"
+        android:text="确定"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/bt_modify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/selector_modify_address"
+        android:layout_marginTop="20dp"
+        android:text="纠正地址"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

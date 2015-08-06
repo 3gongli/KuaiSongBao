@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/layout_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp" >
+
+        <Button
+            android:id="@+id/bt_modif_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_again_newpass"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:background="#008EE6"
+            android:text="@string/complete"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/et_oldpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/iv_icon"
+            android:background="@drawable/frame"
+            android:hint="@string/oldpass"
+            android:paddingLeft="10px"
+            android:inputType="textPassword"
+            android:textSize="30px" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/et_newpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_oldpass"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/frame"
+            android:hint="@string/newpass"
+            android:inputType="textPassword"
+            android:paddingLeft="10px"
+            android:textSize="30px" />
+
+        <EditText
+            android:id="@+id/et_again_newpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_newpass"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/frame"
+            android:hint="@string/again_newpass"
+            android:inputType="textPassword"
+            android:paddingLeft="10px"
+            android:textSize="30px" />
+    </RelativeLayout>
+
+</LinearLayout>
